@@ -105,10 +105,32 @@ with col2:
     smoking_history = st.selectbox("Smoking History",
         ["never", "current", "former", "No Info", "ever", "not current"],
         index=None, placeholder="Select smoking history")
-    bmi = st.number_input("BMI", min_value=10.0, max_value=80.0, value=None, placeholder="Enter BMI")
-    HbA1c_level = st.number_input("HbA1c Level", min_value=3.0, max_value=20.0, value=None, placeholder="Enter HbA1c level")
-    blood_glucose_level = st.number_input("Blood Glucose Level", min_value=50.0, max_value=500.0, value=None, placeholder="Enter blood glucose level")
+        bmi = st.number_input(
+    "BMI",
+    min_value=10.0,
+    max_value=95.7,
+    value=None,
+    step=0.1,
+    placeholder="Enter BMI"
+)
 
+HbA1c_level = st.number_input(
+    "HbA1c Level",
+    min_value=3.5,
+    max_value=9.0,
+    value=None,
+    step=0.1,
+    placeholder="Enter HbA1c level"
+)
+
+blood_glucose_level = st.number_input(
+    "Blood Glucose Level",
+    min_value=80.0,
+    max_value=300.0,
+    value=None,
+    step=1.0,
+    placeholder="Enter blood glucose level"
+)
 st.markdown("<br>", unsafe_allow_html=True)
 predict = st.button("🔍  Predict Diabetes")
 st.markdown("</div>", unsafe_allow_html=True)
