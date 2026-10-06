@@ -78,7 +78,7 @@ div[data-testid="stAlert"] {border-radius:14px;}
 
 st.markdown("""
 <div class="hero">
-  <div class="badge">AI-powered health screening</div>
+  <div class="badge">Supervised Learning Diabetes Screening</div>
   <h1>Early Diabetes<br><span>Detection</span></h1>
   <p>A supervised-learning system designed to estimate diabetes risk from selected
   patient health information. Enter the required details below to generate a prediction.</p>
